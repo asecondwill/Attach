@@ -564,6 +564,7 @@ class UploadBehavior extends ModelBehavior
                 'foreign_key' => $model->id,
                 'filename' => basename($filename),
                 'type' => $type,
+                 'extension' => $this->getFileExtension($filename)
             ),
         );
 
