@@ -94,6 +94,16 @@ class AttachmentSchema extends CakeSchema
             'comment' => '',
             'charset' => 'utf8'
         ),
+        
+        'extension' => array(
+            'type' => 'string',
+            'null' => false,
+            'default' => null,
+            'length' => 100,
+            'collate' => 'utf8_general_ci',
+            'comment' => '',
+            'charset' => 'utf8'
+        ),
 
         'indexes' => array(
             'PRIMARY' => array('column' => 'id', 'unique' => 1)
